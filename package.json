@@ -1,9 +1,9 @@
 {
-  "name": "webpack-handlebars-starter",
+  "name": "swim-feed",
   "version": "1.0.0",
-  "description": "Starter project for webpack, handlebars and sass.",
+  "description": "Proof of concept for swim log.",
   "main": "./src/index.js",
-  "author": "Adam Whitehouse",
+  "author": "Jay Place",
   "license": "MIT",
   "scripts": {
     "start": "npm-run-all --parallel dev-build dev-server",
