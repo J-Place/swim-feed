@@ -10,7 +10,7 @@ module.exports = {
 	context: path.resolve(__dirname),
 	entry: {
 		home: './src/views/home/home.js',
-		about: './src/views/about/about.js'
+		// about: './src/views/about/about.js'
 	},
 	output: {
 		path: path.resolve(__dirname, 'dist'),
@@ -62,13 +62,14 @@ module.exports = {
 			filename: 'index.html',
 			template: './src/views/home/home.handlebars',
 			chunks: ['home']
-		}),
-		new HtmlWebpackPlugin({
-			title: 'About',
-			filename: 'about/index.html',
-			template: './src/views/about/about.handlebars',
-			chunks: ['about']
 		})
+		// ,
+		// new HtmlWebpackPlugin({
+		// 	title: 'About',
+		// 	filename: 'about/index.html',
+		// 	template: './src/views/about/about.handlebars',
+		// 	chunks: ['about']
+		// })
 	],
 	resolve: {
 		extensions: ['', '.js', '.json', '.handlebars']
